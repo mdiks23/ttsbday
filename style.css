@@ -1,0 +1,449 @@
+* {
+    /* Change your font family */
+    font-family: sans-serif;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    size: fitscreen;
+}
+
+.content-table thead tr {
+    background-color: #e7bf26;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 2px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: black;
+}
+.content-table tbody tr:nth-of-type(odd) {
+    background-color: black;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #e7bf26;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #e7bf26;
+}
+.content-table tbody tr.deactive-row {
+    font-weight: bold;
+    color: white;
+}
+p{
+  align-content: center
+  color: 
+  font-family: cursive;
+}
+p font{
+  color: white;
+  font-family: cursive;
+}
+marquee font{
+  font-family: cursive;
+}
+footer p font{
+  color: white;
+  font-family: insolata;
+  size: 1;
+}
+    padding: 2% 0px 0px 0px;
+    justify-content: center;
+    top: 10%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  :root {
+    --dark-text: #f8fbff;
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #f0f0f0;
+    --light-text: #151426;
+    --light-btn: #9796f0;
+    --blue: #0000ff;
+    --white: #fff;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --font-family: consolas;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    place-items: center;
+    font-family: var(--font-family);
+    background:linear-gradient(to bottom, #000000,  );
+    overflow: hidden;
+  }
+  .contianer {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    display: flex;
+    padding: 2% 0px 0px 0px;
+    justify-content: center;
+    top: 10%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  .calendar {
+    height: max-content;
+    width: fullsreen;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 30px 50px 0px 50px;
+  }
+  .calendar {
+    box-shadow: var(--shadow);
+  }
+  .calendar-header {
+    background: #9796f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--white);
+    padding: 10px;
+  }
+  .calendar-body {
+    pad: 10px;
+  }
+  .calendar-week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+    cursor: pointer;
+    color:rgb(104, 104, 104);
+  }
+  .calendar-week-days div:hover {
+  color:black;
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+  }
+  .calendar-week-days div {
+    display: grid;
+    place-items: center;
+    color: var(--bg-second);
+    height: 50px;
+  }
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: var(--color-txt);
+  }
+  .calendar-days div {
+    width: 37px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+  }
+  .month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .month-picker:hover {
+    background-color: var(--color-hover);
+  }
+  .month-picker:hover {
+    color: var(--color-txt);
+  }
+  .year-picker {
+    display: flex;
+    align-items: center;
+  }
+  .year-change {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+  .year-change:hover {
+    background-color: var(--light-btn);
+    transition:all .2s ease-in-out ;
+    transform: scale(1.12);
+  }
+  .year-change:hover pre {
+    color: var(--bg-body);
+  }
+  .calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #year:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.2 ease-in-out;
+  }
+  .calendar-days div span {
+    position: absolute;
+  }
+   .calendar-days div:hover {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    background-color: #fbc7d4;
+    border-radius: 20%;
+    color: var(--dark-text);
+  }
+  .calendar-days div.current-date {
+    color: var(--dark-text);
+    background-color: var(--light-btn);
+    border-radius: 20%;
+  }
+  .month-list {
+    position: relative;
+    left: 0;
+    top: -50px;
+    background-color: #ebebeb;
+    color: var(--light-text);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    border-radius: 20px;
+  }
+  .month-list > div {
+    display: grid;
+    place-content: center;
+    margin: 5px 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .month-list > div > div {
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .month-list > div > div:hover {
+    background-color:var(--light-btn);
+    color: var(--dark-text);
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+  }
+  .month-list.show {
+    visibility: visible;
+    pointer-events: visible;
+    transition: 0.6s ease-in-out;
+    animation: to-left .71s forwards;
+  }
+  .month-list.hideonce{
+    visibility: hidden;
+  }
+  .month-list.hide {
+    animation: to-right 1s forwards;
+    visibility: none;
+    pointer-events: none;
+  }
+  .date-time-formate {
+    width: max-content;
+    height: max-content;
+    font-family: Dubai Light, Century Gothic;
+    position: relative;
+    display: inline;
+    top: 140px;
+    justify-content: center;
+  }
+  .day-text-formate {
+    font-family: Microsoft JhengHei UI;
+    font-size: 1.4rem;
+    padding-right: 5%;
+    border-right: 3px solid #9796f0;
+    position: absolute;
+    left: -2rem;
+    top: -1rem;
+  }
+  .date-time-value {
+    display: block;
+    height: max-content;
+    width: max-content;
+    position: relative;
+    left: 60%;
+    top: -18px;
+    text-align: center;
+  }
+  .time-formate {
+    font-size: 1.5rem;
+  }
+  .time-formate.hideTime {
+    animation: hidetime 1.5s forwards;
+  }
+  .day-text-formate.hidetime {
+    animation: hidetime 1.5s forwards;
+  }
+  .date-formate.hideTime {
+    animation: hidetime 1.5s forwards;
+  }
+  .day-text-formate.showtime{
+    animation: showtime 1s forwards;
+  }
+  .time-formate.showtime {
+    animation: showtime 1s forwards;
+  }
+  .date-formate.showtime {
+    animation: showtime 1s forwards;
+  }
+  @keyframes to-top {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+  }
+  @keyframes to-left {
+    0% {
+      transform: translatex(230%);
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(0);
+      opacity: 1;
+    }
+  }
+  @keyframes to-right {
+    10% {
+      transform: translatex(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(-150%);
+      opacity: 1;
+    }
+  }
+  @keyframes showtime {
+    0% {
+      transform: translatex(250%);
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes hidetime {
+    0% {
+      transform: translatex(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(-370%);
+      opacity: 1;
+    }
+  }
+  @media (max-width:375px) {
+    .month-list>div{
+  
+      margin: 5px 0px;
+    }
+  }
+  
+.slider-frame{
+      overflow: hidden;
+      height: 300px;
+      width: 450px;
+      margin-left: 9px;
+      margin-top: 5px;
+  }
+ 
+  /*---------- SLIDE ANIMATION --------------*/
+ 
+ 
+  @keyframes slide_animation{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:450px;}
+      30% {left:450px;}
+      40% {left: 900px;}
+      50% {left: 900px;}
+      60% {left: 450px;}
+      70% {left: 450px;}
+      80% {left: 0px;}
+      90% {left: 0px;}
+      100% {left:0px;}
+  }
+ 
+  @-webkit-keyframes slide_animation{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:450px;}
+      30% {left:450px;}
+      40% {left: 900px;}
+      50% {left: 900px;}
+      60% {left: 450px;}
+      70% {left: 450px;}
+      80% {left: 0px;}
+      90% {left: 0px;}
+      100% {left:0px;}
+  }
+ 
+  .slide-images{
+      width: 900px;
+      height: 300px;
+      margin: 0 0 0 -900px;
+      position: relative;
+      -webkit-animation-name: slide_animation;
+      animation-name: slide_animation;
+      -webkit-animation-duration: 1s;
+      animation-duration: 12s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+  }
+ 
+  .img-container{
+      height: 300px;
+      width: 450px;
+      position: relative;
+      float: left;
+  }
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
